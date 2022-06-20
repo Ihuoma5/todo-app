@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+
+  </head>
+  <body>
+    <main>
+      <div class="dark">
+        <img
+          src="./images/bg-desktop-dark.jpg"
+          alt="bg-desktop-dark"
+          class="bg-desktop-dark"
+        />
+        <img src="./images/bg-mobile-dark.jpg" alt="bg-mobile-dark" class="bg-mobile-dark">
+        <div class="logo">
+          <h1>Todo</h1>
+          <img src="./images/icon-sun.svg" alt="sun" class="sun" />
+        </div>
+        <div class="new-todo">
+          <button class="radio"></button>
+          <label
+            ><input
+              type="text"
+              placeholder="Create a new todo..."
+              class="task-list"
+            />
+          </label>
+        </div>
+
+        <ul class="todos">
+          <li class="todos-li"><button class="radio"></button> Task 1 <img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
+          <li class="todos-li"><button class="radio"></button> Task 2<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
+          <li class="todos-li"><button class="radio"></button> Task 3<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
+          <li class="todos-li"><button class="radio"></button> Task 4<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
+          <li class="todos-li"><button class="radio"></button> Task 5<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
+          <li class="todos-li"><button class="radio"></button> Task 6<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
+          <!-- <li class="item-list">
+            <div class="items-left">
+              Add dynamic number
+              items left
+            </div>
+            <div class="state">
+              <p>All</p>
+              <p>Active</p>
+              <p>Completed</p>
+            </div>
+            <div class="clear">Clear Completed</div>
+          </li> -->
+        </ul>
+        <!-- <p class="drag">Drag and drop to reorder list</p> -->
+      </div>
+      <!-- <div class="state-mobile">
+        <p>All</p>
+        <p>Active</p>
+        <p>Completed</p>
+      </div> -->
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
