@@ -1,8 +1,21 @@
+const icon = document.querySelector('#icon')
+const bgImg = document.querySelector('.bg-desktop-dark')
 const form = document.querySelector(".radio");
 const todosList = document.querySelector(".todos");
 const clear = document.querySelector(".clear");
 const tasks = document.querySelector(".task-list");
 
+
+icon.onclick = function() {
+  document.body.classList.toggle('light-theme');
+  if(document.body.classList.contains('light-theme')) {
+    icon.src = './images/icon-sun.svg'
+    bgImg.src = './images/bg-desktop-light.jpg'
+  } else {
+    icon.src = './images/icon-moon.svg'  
+    bgImg.src = './images/bg-desktop-dark.jpg'
+  }
+}
 loadEventListener();
 
 function loadEventListener() {

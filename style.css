@@ -19,11 +19,20 @@
   --dark-Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
   --Josefin: "Josefin Sans", sans-serif;
 }
-
+.light-theme {
+    --dark-Very-Dark-Blue: hsl(236, 33%, 92%);
+    --dark-Dark-Grayish-Blue: hsl(236, 9%, 61%);
+    --dark-Very-Dark-Desaturated-Blue: hsl(0, 0%, 98%);
+    --dark-Light-Grayish-Blue:hsl(235, 19%, 35%);
+}
 * {
   margin: 0;
   padding: 0;
   font-family: var(--Josefin);
+}
+#icon {
+    cursor: pointer;
+    padding: 2px;
 }
 .dark {
     background-color: var(--dark-Very-Dark-Blue);
@@ -46,9 +55,6 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 8px;
-}
-.sun {
-        padding: 2px;
 }
 .new-todo {
     margin: auto;
