@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -13,7 +12,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Todo app</title>
-
   </head>
   <body>
     <main>
@@ -23,13 +21,17 @@
           alt="bg-desktop-dark"
           class="bg-desktop-dark"
         />
-        <img src="./images/bg-mobile-dark.jpg" alt="bg-mobile-dark" class="bg-mobile-dark">
+        <img
+          src="./images/bg-mobile-dark.jpg"
+          alt="bg-mobile-dark"
+          class="bg-mobile-dark"
+        />
         <div class="logo">
           <h1>Todo</h1>
-          <img src="./images/icon-sun.svg" alt="sun" class="sun" id="icon"/>
+          <img src="./images/icon-sun.svg" alt="sun" class="sun" id="icon" />
         </div>
         <div class="new-todo">
-          <button class="radio"></button>
+          <button class="radio submit" type="submit"></button>
           <label
             ><input
               type="text"
@@ -40,32 +42,65 @@
         </div>
 
         <ul class="todos">
-          <li class="todos-li"><button class="radio"></button> Task 1 <img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
-          <li class="todos-li"><button class="radio"></button> Task 2<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
-          <li class="todos-li"><button class="radio"></button> Task 3<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
-          <li class="todos-li"><button class="radio"></button> Task 4<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
-          <li class="todos-li"><button class="radio"></button> Task 5<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
-          <li class="todos-li"><button class="radio"></button> Task 6<img src="./images/icon-cross.svg" alt="cross" class="cross"></li>
-          <!-- <li class="item-list">
-            <div class="items-left">
-              Add dynamic number
-              items left
-            </div>
-            <div class="state">
-              <p>All</p>
-              <p>Active</p>
-              <p>Completed</p>
-            </div>
-            <div class="clear">Clear Completed</div>
-          </li> -->
+          <li class="todos-li checkedLi">
+            <button class="radio"></button> Task 1
+            <img src="./images/icon-cross.svg" alt="cross" class="cross" />
+          </li>
+          <li class="todos-li">
+            <button class="radio completed" type="submit"></button> Task 2<img
+              src="./images/icon-cross.svg"
+              alt="cross"
+              class="cross"
+            />
+          </li>
+          <li class="todos-li ">
+            <button class="radio"></button> <p>Task 3</p><img
+              src="./images/icon-cross.svg"
+              alt="cross"
+              class="cross"
+            />
+          </li>
+          <li class="todos-li">
+            <button class="radio"></button> Task 4<img
+              src="./images/icon-cross.svg"
+              alt="cross"
+              class="cross"
+            />
+          </li>
+          <li class="todos-li">
+            <button class="radio"></button> Task 5<img
+              src="./images/icon-cross.svg"
+              alt="cross"
+              class="cross"
+            />
+          </li>
+          <li class="todos-li">
+            <button class="radio completed"></button> Task 6<img
+              src="./images/icon-cross.svg"
+              alt="cross"
+              class="cross"
+            />
+          </li>
         </ul>
+        <div class="item-list">
+          <div class="items-left">
+            num
+            items left
+          </div>
+          <div class="state">
+            <p>All</p>
+            <p>Active</p>
+            <p>Completed</p>
+          </div>
+          <div class="clear">Clear Completed</div>
+        </div>
         <!-- <p class="drag">Drag and drop to reorder list</p> -->
       </div>
-      <!-- <div class="state-mobile">
+      <div class="state-mobile">
         <p>All</p>
         <p>Active</p>
         <p>Completed</p>
-      </div> -->
+      </div>
     </main>
 
     <div class="attribution">

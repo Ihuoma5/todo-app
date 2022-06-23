@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&display=swap");
 :root {
   --bright-blue: hsl(220, 98%, 61%);
   --backgroud1: hsl(192, 100%, 67%);
@@ -20,10 +20,10 @@
   --Josefin: "Josefin Sans", sans-serif;
 }
 .light-theme {
-    --dark-Very-Dark-Blue: hsl(236, 33%, 92%);
-    --dark-Dark-Grayish-Blue: hsl(236, 9%, 61%);
-    --dark-Very-Dark-Desaturated-Blue: hsl(0, 0%, 98%);
-    --dark-Light-Grayish-Blue:hsl(235, 19%, 35%);
+  --dark-Very-Dark-Blue: hsl(236, 33%, 92%);
+  --dark-Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --dark-Very-Dark-Desaturated-Blue: hsl(0, 0%, 98%);
+  --dark-Light-Grayish-Blue: hsl(235, 19%, 35%);
 }
 * {
   margin: 0;
@@ -31,114 +31,176 @@
   font-family: var(--Josefin);
 }
 #icon {
-    cursor: pointer;
-    padding: 2px;
+  cursor: pointer;
+  padding: 2px;
 }
+
 .dark {
-    background-color: var(--dark-Very-Dark-Blue);
-    min-height: 100vh;
+  background-color: var(--dark-Very-Dark-Desaturated-Blue);
+  min-height: 100vh;
 }
 .bg-desktop-dark {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
-.bg-mobile-dark{
-    display: none;
+.bg-mobile-dark {
+  display: none;
 }
 .logo {
-    color: white;
-    margin: auto;
-    margin-top: -200px;
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 8px;
+  color: white;
+  margin: auto;
+  margin-top: -200px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 }
 .new-todo {
-    margin: auto;
-    width: 500px;
-    height: 65px;
-    position: relative;
-    top: 2rem;
-    border-radius: 5px;
-    background-color: var(--dark-Very-Dark-Desaturated-Blue);
+  margin: auto;
+  width: 500px;
+  height: 65px;
+  position: relative;
+  top: 2rem;
+  border-radius: 5px;
+  background-color: var(--dark-Very-Dark-Desaturated-Blue);
 }
 .radio {
-    width: 30px;
-    height: 30px;
-    margin: 10px 20px;
-    border-radius: 50%;
-    border: 1px solid var(--dark-Dark-Grayish-Blue);
-    background-color: var(--dark-Very-Dark-Desaturated-Blue);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 10px 20px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-Dark-Grayish-Blue);
+  background-color: var(--dark-Very-Dark-Desaturated-Blue);
+}
+.clicked {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bright-blue),
+    var(--backgroud1),
+    var(--background2)
+  );
+  background-image: url(./images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.checkedLi {
+  text-decoration: line-through;
+  color: var(--dark-Dark-Grayish-Blue);
 }
 .task-list {
-    background-color: var(--dark-Very-Dark-Desaturated-Blue);
-    border: none;
-    width: 400px;
-    height: 20px;
+  background-color: var(--dark-Very-Dark-Desaturated-Blue);
+  border: none;
+  width: 400px;
+  height: 20px;
 }
 input {
-    color: var(--dark-Light-Grayish-Blue);
-    font-size: 18px;
+  color: var(--dark-Light-Grayish-Blue);
+  font-size: 18px;
 }
 ::placeholder {
-    color: var(--dark-Dark-Grayish-Blue);
-    font-size: 18px;
+  color: var(--dark-Dark-Grayish-Blue);
+  font-size: 18px;
 }
-ul{
-    list-style: none;
-    margin: auto;
-    width: 500px;
-    position: relative;
-    top: 3rem;
-    border-radius: 5px;
-    color: var(--dark-Light-Grayish-Blue);
-    background-color: var(--dark-Very-Dark-Desaturated-Blue);
+ul {
+  list-style: none;
+  margin: auto;
+  width: 500px;
+  position: relative;
+  top: 3rem;
+  border-radius: 5px;
+  color: var(--dark-Light-Grayish-Blue);
+  background-color: var(--dark-Very-Dark-Desaturated-Blue);
+  box-shadow: 0 3px 10px var(--dark-Very-Dark-Blue);
+}
+ul .radio:hover {
+  border-image: linear-gradient(
+    to bottom right,
+    var(--bright-blue),
+    var(--backgroud1),
+    var(--background2)
+  ) 1 100%;
 }
 .todos-li {
-    border-bottom: 1px solid var(--dark-Very-Dark-Grayish1-Blue);
+  border-bottom: 1px solid var(--dark-Very-Dark-Grayish1-Blue);
+  display: flex;
+  align-items: center;
+}
+.todos-li:hover {
+  cursor: pointer;
 }
 .cross {
-    margin-left: 330px;
-    /* display: none; */
+  margin-left: 330px;
+  cursor: pointer;
+  height: 20px;
+  align-items: center;
 }
-
-.item-list, .state-mobile {
-    display: flex;
-    font-size: 15px;
-    justify-content: space-between;
-    padding: 20px;
-    color: var(--dark-Very-Dark-Grayish1-Blue);
+.item-list {
+  margin: auto;
+  width: 471px;
+  position: relative;
+  top: 3rem;
+  border-radius: 5px;
+  color: var(--dark-Light-Grayish-Blue);
+  background-color: var(--dark-Very-Dark-Desaturated-Blue);
+  box-shadow: 0 3px 10px var(--dark-Very-Dark-Blue);
 }
+.item-list,
+.state-mobile {
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  padding: 20px;
+  color: var(--dark-Very-Dark-Grayish1-Blue);
 
+}
+.item-list div:hover {
+  cursor: pointer;
+  color: var(--dark-Dark-Grayish-Blue);
+}
+.state p:hover {
+  color: var(--dark-Light-Grayish-Blue);
+}
+.state p:active {
+  color: var(--bright-blue);
+}
 .state {
-    display: flex; 
+  display: flex;
 }
 .state-mobile {
-    display: none;
+  display: none;
 }
 .state p {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 .drag {
-    color: var(--dark-Very-Dark-Grayish1-Blue);
-    position: relative;
-    bottom: 3rem;
-    padding: auto;
+  color: var(--dark-Very-Dark-Grayish1-Blue);
+  position: relative;
+  bottom: 3rem;
+  padding: auto;
 }
-
-@media only screen and (max-width: 600px) {
-    .bg-desktop-dark {
-        display: none;
-    }
-    .bg-mobile-dark{
-        display: block;
-        width: 100%;
-    }
-  .logo, .new-todo, ul {
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin-top: -140px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .bg-desktop-dark {
+    display: none;
+  }
+  .bg-mobile-dark {
+    display: block;
+    width: 100%;
+  }
+  .logo,
+  .new-todo,
+  ul {
     width: 350px;
+  }
+  .cross {
+    margin-left: 12rem;
   }
   .logo {
     bottom: 11rem;
@@ -149,7 +211,8 @@ ul{
   .task-list {
     width: 200px;
   }
-  .state {
+  
+    .state {
     display: none;
   }
   .state-mobile {
@@ -162,4 +225,8 @@ ul{
     border-radius: 5px;
     background-color: var(--dark-Very-Dark-Desaturated-Blue);
   }
+  .state-mobile p:active {
+    color: var(--bright-blue);
   }
+}
+
