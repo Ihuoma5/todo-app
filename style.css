@@ -211,7 +211,10 @@ ul .radio:hover {
   .task-list {
     width: 200px;
   }
-  
+  .item-list {
+    margin: auto;
+    width: 330px;
+  }
     .state {
     display: none;
   }
